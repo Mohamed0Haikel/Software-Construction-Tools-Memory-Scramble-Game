@@ -1,4 +1,3 @@
-```markdown
 # Memory Scramble Game
 
 A card-matching memory game built with Python and Tkinter, demonstrating
@@ -6,51 +5,62 @@ concurrency concepts from the Software Construction course.
 
 ---
 
-## Requirements
+##  Requirements
 
 - **Python 3.10+** (uses modern type hints)
-- No external packages required — the game uses only the Python standard
-  library (`tkinter`, `threading`, `queue`, `unittest`).
-
+- No external packages required — the game uses only the Python standard library:
+  - `tkinter`
+  - `threading`
+  - `queue`
+  - `unittest`
 
 ---
 
-## How to Build & Run
+##  How to Build & Run
 
-1. **Clone the repository:**
-   ```
-   git clone https://github.com/Mohamed0Haikel/Software-Construction-Tools-Memory-Scramble-Game.git
-   cd memory-scramble-game
-   ```
+### 1. Clone the Repository
 
-2. **Run the game:**
-   ```
-   python -m src.main
-   ```
+```bash
+git clone https://github.com/Mohamed0Haikel/Software-Construction-Tools-Memory-Scramble-Game.git
+cd memory-scramble-game
+```
 
-3. **Play:**
-   - Click **New Game** → configure rows, columns, and timeout → **Start Game**.
-   - Click cards to flip them. Find all matching pairs before the timer reaches zero!
+### 2. Run the Game
 
+```bash
+python -m src.main
+```
+
+### 3. Play the Game
+
+1. Click **New Game**
+2. Configure:
+   - Rows
+   - Columns
+   - Timeout
+3. Click **Start Game**
+4. Flip cards and match all pairs before the timer reaches zero!
 
 ---
 
 ## Project Architecture
 
-
+```text
 memory-scramble-game/
-├── README.md                 
+├── README.md
 ├── requirements.txt
 └── src/
-    ├── main.py               : entry point
-    ├── config.py             : GameConfig dataclass & SYMBOLS
-    ├── board.py              : Board & Card domain models
-    ├── timer.py              : CountdownTimer (thread + lock + queue)
-    ├── game_engine.py        : thread-safe game state manager
-    └── gui.py                : Tkinter GUI (queue consumer)
-
+    ├── main.py         # Entry point
+    ├── config.py       # GameConfig dataclass & SYMBOLS
+    ├── board.py        # Board & Card domain models
+    ├── timer.py        # CountdownTimer (thread + lock + queue)
+    ├── game_engine.py  # Thread-safe game state manager
+    └── gui.py          # Tkinter GUI (queue consumer)
+```
 
 ---
 
 
+- Uses only Python standard library modules
 
+---
