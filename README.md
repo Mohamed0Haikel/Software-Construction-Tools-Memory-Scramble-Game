@@ -37,7 +37,7 @@ concurrency concepts from the Software Construction course.
 
 ## Project Architecture
 
-```
+
 memory-scramble-game/
 ├── README.md                 
 ├── requirements.txt
@@ -49,7 +49,7 @@ memory-scramble-game/
     ├── game_engine.py        : thread-safe game state manager
     └── gui.py                : Tkinter GUI (queue consumer)
 
-```
+
 
 
 
